@@ -6,7 +6,7 @@
     <title>Psychic Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
 
@@ -21,31 +21,7 @@
             Guess Left: <span id="guessesleft"></span>
             <br>
             Your Guesses So Far: <span id="userguess"></span>
-            </div>
-
-    <script type=text/javascript>
-
-var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
- var computerGuess = '';
- var userGuess = '';
- var losses = 0;
- var wins = 0;
- var soFar = [];
-var guessesLeft = 10;
-
-computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
-console.log(computerGuess);
-
-document.onkeyup = function(event) {
-  var userGuess = event.key;
-  if (userGuess !== computerGuess) {
-    guessesLeft--; 
-    document.getElementById("guessesleft").innerHTML=guessesLeft;
-  }
-
-}
-
-</script>
+    </div>
 
 </body>
 </html>
