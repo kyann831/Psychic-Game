@@ -1,0 +1,10 @@
+body {
+    background-image: url("psychicbg.jpg")
+}
+.center {
+    margin:auto;
+    line-height: 1.6;
+    width: 50%;
+    color:white;
+}
+
